@@ -3,6 +3,7 @@ import Current from "./components/Current/Current"
 import Navbar from "./components/Navbar/Navbar"
 import { useWeather } from "./store/useWeather"
 import Daily from "./components/Daily/Daily"
+import Loader from "./components/Loader/Loader"
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
             <Current />
             <Daily />
           </div>
-          : <h2>Идет загрузка...</h2>
+          : <Loader/>
         }
       </div>
     </>
