@@ -1,0 +1,42 @@
+@import './fonts.scss';
+
+:root {
+    --font-family: "Montserrat";
+    --bg: white;
+    --text: black;
+}
+
+.app{
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    &.dark{
+        --bg: rgb(24, 34, 53);
+        --text: white;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+button,
+input {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}

@@ -1,0 +1,93 @@
+.current {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+        background: var(--bg);
+        padding: 20px;
+        position: relative;
+        &-img {
+            position: absolute;
+            right: 20px;
+            top: 46px;
+            width: 120px;
+            height: 120px;
+        }
+        &-degree {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 96px;
+            color: #4793ff;            
+        }
+        &-day {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 40px;
+            color: var(--text);
+        }
+        &-time {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 25px;
+            color: #939cb0;      
+            margin-bottom: 15px;
+            margin-top: 30px;      
+        }
+        &-city {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 25px;
+            color: #939cb0;            
+        }
+    }
+    &__right {
+        max-width: 750px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+        background: var(--bg);
+        padding: 42px 32px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        &-item {    
+            z-index: 2;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            &-image {
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background: var(--bg);
+                box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-text {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: #939cb0;           
+                min-width: 100px;     
+            }
+            &-value {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--text);                
+            }
+        }
+    }
+}
